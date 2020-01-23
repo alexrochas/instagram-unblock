@@ -1,0 +1,24 @@
+{
+  "name": "Instagram Unblock",
+  "version": "0.1",
+  "description": "Remove limit of pictures you can browse",
+  "manifest_version": 2,
+  "browser_action": {},
+  "icons": {
+    "16": "instab-logos.png",
+    "48": "instab-logos.png",
+    "128": "instab-logos.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.instagram.com/**"
+      ],
+      "js": ["jquery.js", "content.js"]
+    }
+  ],
+  "permissions": [
+      "tabs",
+      "*://www.instagram.com/**"
+   ]
+}
